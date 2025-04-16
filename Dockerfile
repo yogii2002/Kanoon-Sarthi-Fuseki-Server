@@ -121,7 +121,7 @@ ENV \
     FUSEKI_JAR="${FUSEKI_JAR}"          \
     FUSEKI_DIR="${FUSEKI_DIR}"
 
-EXPOSE 8080
+EXPOSE 3030
 
 ENTRYPOINT ["./entrypoint.sh" ]
 CMD []
