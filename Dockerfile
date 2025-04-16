@@ -110,6 +110,9 @@ RUN \
     mkdir -p $DATA && \
     chmod a+x entrypoint.sh
 
+RUN mkdir -p ${FUSEKI_DIR}/databases/test_kg
+COPY test_kg.ttl ${FUSEKI_DIR}/databases/test_kg/data.ttl
+
 ## Default environment variables.
 ENV \
     JAVA_HOME=${JAVA_MINIMAL}           \
