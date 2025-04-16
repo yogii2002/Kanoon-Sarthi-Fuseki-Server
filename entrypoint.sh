@@ -6,4 +6,4 @@
 #!/bin/sh
 
 
-exec ${JAVA_HOME}/bin/java ${JAVA_OPTIONS} -jar ${FUSEKI_JAR} --mem=databases/test_kg/test_kg.ttl
+exec ${JAVA_HOME}/bin/java ${JAVA_OPTIONS} -jar ${FUSEKI_JAR} --config=config.ttl
