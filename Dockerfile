@@ -111,7 +111,7 @@ RUN \
     chmod a+x entrypoint.sh
 
 RUN mkdir -p ${FUSEKI_DIR}/databases/test_kg
-COPY test_kg.ttl ${FUSEKI_DIR}/databases/test_kg/data.ttl
+COPY test_kg.ttl ${FUSEKI_DIR}/databases/test_kg/test_kg.ttl
 
 ## Default environment variables.
 ENV \
